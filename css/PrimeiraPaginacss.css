@@ -1,0 +1,75 @@
+.NavPageTop {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+}
+
+#SearchBarContainer {
+  margin-left: auto;
+}
+
+#SearchBarInner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.NavPageBottom {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.ButtonsFooter {
+  display: flex;
+  align-items: center;
+  border-width: 2px;
+  border-radius: 10px;
+  border-style: groove;
+  padding: 8px;
+  width: 8vw;
+  height: 2vw;
+  background-color: white;
+  color: black;
+}
+
+#ButtonTopMainPageRight {
+  align-items: normal;
+  background-color: white;
+  color: rgb(4, 114, 105);
+  width: 200px;
+  height: 150px;
+  border-width: 2px;
+  border-radius: 10px;
+  border-style: groove;
+  padding: 8px;
+}
+
+main {
+  flex: 1; /* ← adiciona isso */
+}
+
+#ButtonTopMainPageLeft {
+  align-items: normal;
+  background-color: rgb(4, 114, 105);
+  color: white;
+  width: 200px;
+  height: 150px;
+  border-width: 1px;
+  border-radius: 10px;
+  border-style: groove;
+  padding: 8px;
+}
