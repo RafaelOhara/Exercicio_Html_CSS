@@ -1,0 +1,40 @@
+:root {
+  --cor-primaria: rgb(4, 114, 105);
+  --cor-fundo-tela: #F5F5F5;
+  --cor-fundo-card: #FFFFFF;
+  --cor-texto: #212121;
+  --cor-borda: rgba(0, 0, 0, 0.15);
+}
+
+/* Reset básico e Box Model garantindo que bordas não quebrem o tamanho */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: var(--cor-texto);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Garante que o conteúdo empurre o rodapé para o final da tela */
+}
+
+/* Esconde rótulos visualmente, mas mantém acessíveis para leitores de tela */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
