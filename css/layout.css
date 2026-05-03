@@ -1,0 +1,96 @@
+/* HEADER */
+.NavPageTop {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 12px 20px;
+  min-height: 56px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-borda);
+  background-color: var(--cor-fundo-card);
+}
+
+.NavPageTop .Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.NavPageTop a {
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+
+.SearchBarContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* MAIN CENTRALIZADO (Para a tela de Login) */
+.MainCentralizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 20px;
+  background-color: var(--cor-fundo-tela);
+  flex: 1; /* Preenche todo o espaço entre o header e o footer */
+}
+
+/* FOOTER */
+.NavPageBottom {
+  border-top: 1px solid var(--cor-borda);
+  padding: 1rem 20px;
+  background-color: var(--cor-fundo-card);
+}
+
+.NavPageBottom .Buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+#Signature {
+  margin-left: 20px;
+  margin-top: 12px;
+  margin-bottom: 1rem;
+  color: gray;
+  font-size: 0.7rem;
+}
+
+/* RESPONSIVIDADE LAYOUT */
+@media (min-width: 481px) {
+  .NavPageTop .Buttons {
+    gap: 12px;
+  }
+  .NavPageBottom .Buttons {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .NavPageTop {
+    flex-direction: row;
+    padding: 12px 40px;
+  }
+  .NavPageTop .Buttons {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .SearchBarContainer {
+    width: auto;
+  }
+  .NavPageBottom {
+    padding: 1.5rem 40px;
+  }
+  .NavPageBottom .Buttons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  #Signature {
+    margin-left: 40px;
+  }
+}

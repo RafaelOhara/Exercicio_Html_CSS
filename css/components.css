@@ -1,0 +1,89 @@
+.ButtonsHeader {
+  text-decoration: none;
+  border: 1px solid var(--cor-primaria);
+  border-radius: 10px;
+  background-color: var(--cor-fundo-card);
+  padding: 6px 18px;
+  color: var(--cor-primaria);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.ButtonsFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  height: 40px;
+  background-color: var(--cor-fundo-card);
+  color: var(--cor-texto);
+  padding: 10px;
+  text-decoration: none;
+}
+
+.LoginCard {
+  background-color: var(--cor-fundo-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+.LoginCard h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.botoes-grupo {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn-primario, .btn-secundario {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: opacity 0.2s;
+}
+
+.btn-primario {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: 1px solid var(--cor-primaria);
+}
+
+.btn-secundario {
+  background-color: var(--cor-fundo-card);
+  color: var(--cor-primaria);
+  border: 1px solid var(--cor-primaria);
+}
+
+.btn-primario:hover, .btn-secundario:hover {
+  opacity: 0.85;
+}
+
+.LinksAuxiliares {
+  text-align: left;
+  font-size: 0.875rem;
+  color: gray;
+}
+
+.LinksAuxiliares a {
+  color: gray;
+  text-decoration: none;
+}
+
+.LinksAuxiliares a:hover {
+  text-decoration: underline;
+}
