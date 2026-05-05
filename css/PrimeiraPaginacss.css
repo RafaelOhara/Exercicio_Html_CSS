@@ -1,117 +1,194 @@
-/* COMECO HEADER*/
-
-/* TERMINO DO HEADER*/
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
 }
 
-.TopMain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 1rem 20px;
-}
-.NavMainTop {
-  display: flex;
-  gap: 12px;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-.ButtonsMain {
-  display: grid;
-  grid-template-rows: 2;
-}
 main {
   flex: 1;
 }
 
+.page-container {
+  width: min(100% - 64px, 1100px);
+  margin: 0 auto;
+  padding: 40px 0;
+  background: #f7f7f7;
+}
+
+/* TOPO */
+.TopMain {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.TopMain h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.TopMain p {
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.NavMainTop {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#ButtonTopMainPageLeft,
 #ButtonTopMainPageRight {
-  align-items: normal;
   text-decoration: none;
-  background-color: white;
-  color: rgba(4, 114, 105);
-  padding: 8px 18px;
-  border: 2px solid rgba(4, 114, 105);
-  border-radius: 10px;
-  padding: 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 #ButtonTopMainPageLeft {
-  text-decoration: none;
-  align-items: normal;
-  font: bold;
   background-color: rgb(4, 114, 105);
   color: white;
-  padding: 8px 18px;
-  border-width: 1px;
-  border-radius: 10px;
-  border-style: groove;
-  padding: 8px;
+}
+
+#ButtonTopMainPageRight {
+  background-color: white;
+  color: rgb(4, 114, 105);
+  border: 1px solid rgb(4, 114, 105);
 }
 
 .quadradocinza {
-  background-color: #f0f0f0;
-  border-radius: 8px;
+  background-color: #eee;
+  border-radius: 10px;
   width: 100%;
-  height: 200px;
+  height: 190px;
 }
 
-.MidMain {
-  padding: 2rem 40px;
+/* SEÇÕES */
+.section-block {
+  margin-bottom: 28px;
 }
 
-/* COMECO FOOTER*/
+.section-block h2,
+.featured-posts h2,
+.editor-box h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
 
-/* TERMINO FOOTER*/
+/* CATEGORIAS POPULARES */
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
 
-/*RESPONSIVIDADE  */
-@media (min-width: 481px) {
-  .NavPageTop .Buttons {
-    gap: 12px;
+.popular-card {
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* TODAS AS CATEGORIAS */
+.all-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.all-categories-grid a {
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  border: 1px dashed #ddd;
+  border-radius: 10px;
+
+  text-decoration: none;
+  color: #333;
+}
+
+/* PARTE INFERIOR */
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.post-card {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 18px;
+  align-items: center;
+
+  padding: 16px;
+  margin-bottom: 16px;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.post-image {
+  width: 130px;
+  height: 95px;
+  background: #eee;
+  border-radius: 8px;
+}
+
+.post-meta,
+.post-time {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.editor-box {
+  padding: 28px 24px;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  body {
+    overflow-x: auto;
   }
-  .SearchBarInner input {
-    width: 130px;
+
+  .page-container {
+    width: 1100px;
+    min-width: 1100px;
+    padding: 40px 0;
   }
-  .NavPageBottom .Buttons {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
+
   .TopMain {
-    padding: 1.5rem 30px;
+    grid-template-columns: 1.4fr 1fr;
   }
-}
 
-@media (min-width: 769px) {
-  .NavPageTop {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 12px 40px;
+  .popular-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .NavPageTop .Buttons {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-  .SearchBarContainer {
-    width: auto;
-  }
-  .SearchBarInner input {
-    width: 160px;
-  }
-  .NavPageBottom {
-    padding: 1.5rem 40px;
-  }
-  .NavPageBottom .Buttons {
+
+  .all-categories-grid {
     grid-template-columns: repeat(5, 1fr);
   }
-  #Signature {
-    margin-left: 40px;
-  }
-  .TopMain {
-    padding: 2rem 40px;
+
+  .content-grid {
+    grid-template-columns: 2fr 1fr;
   }
 }
