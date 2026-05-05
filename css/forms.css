@@ -16,7 +16,6 @@
   background: transparent;
 }
 
-/* CAMPOS DO FORMULÁRIO */
 .login-form {
   display: flex;
   flex-direction: column;
@@ -53,4 +52,20 @@
   .SearchBarInner input {
     width: 160px;
   }
+}
+.campo-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--cor-texto);
+}
+
+.campo-checkbox input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.campo-checkbox label {
+  cursor: pointer;
 }

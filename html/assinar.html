@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>login</title>
+    <title>Assinar Newsletter</title>
     
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/layout.css" />
@@ -37,28 +37,22 @@
 
     <main class="MainCentralizado">
       <section class="LoginCard">
-        <h2>Entrar</h2>
+        <h2>Assinar Newsletter</h2>
         <form action="#" method="POST" class="login-form">
           
-          <div class="campo-grupo">
-            <label for="emailUsuario" class="visually-hidden">E-mail</label>
-            <input type="email" id="emailUsuario" placeholder="E-mail" required />
-          </div>
+            <div class="campo-grupo">
+                <label for="emailUsuario" class="visually-hidden">E-mail</label>
+                <input type="email" id="emailUsuario" placeholder="E-mail" required />
+            </div>
           
-          <div class="campo-grupo">
-            <label for="senhaUsuario" class="visually-hidden">Senha</label>
-            <input type="password" id="senhaUsuario" placeholder="Senha" required />
-          </div>
+            <div class="campo-checkbox">
+                <input type="checkbox" id="concordoNewsletter" required />
+                <label for="concordoNewsletter">Concordo em receber comunicações e li a política de privacidade.</label>
+            </div>
           
-          <div class="botoes-grupo">
-            <button type="submit" class="btn-primario">Entrar</button>
-            <button type="button" class="btn-secundario">Entrar com Google</button>
-          </div>
-          
-          <div class="LinksAuxiliares">
-            <a href="#">Esqueci a senha</a> &bull; <a href="criar-conta.html">Criar conta</a>
-          </div>
-          
+            <div class="botoes-grupo botoes-alinhado-esquerda">
+                <button type="submit" class="btn-primario">Assinar</button>
+            </div>       
         </form>
       </section>
     </main>
