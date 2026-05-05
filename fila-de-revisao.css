@@ -1,0 +1,16 @@
+.grid-revisao {
+  display: grid;
+
+  /* 4 colunas fixas */
+  grid-template-columns: 2fr 1.5fr 1.5fr 2fr;
+
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.grid-revisao-header {
+  font-weight: bold;
+}
