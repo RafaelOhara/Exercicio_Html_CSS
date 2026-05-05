@@ -87,3 +87,9 @@
 .LinksAuxiliares a:hover {
   text-decoration: underline;
 }
+
+/* Remove o esticamento dos botões quando precisarmos deles menores */
+.botoes-alinhado-esquerda button {
+  flex: none;
+  padding: 10px 24px;
+}
