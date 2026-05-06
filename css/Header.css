@@ -18,7 +18,9 @@ a {
   gap: 8px;
   text-decoration: none;
 }
-
+body {
+  font-family: Arial, sans-serif;
+}
 .ButtonsHeader {
   text-decoration: none;
   border: 1px solid;

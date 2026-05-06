@@ -14,6 +14,10 @@
   flex-direction: column;
   gap: 8px;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
 .title {
   padding: 1rem 20px;
   text-align: left;

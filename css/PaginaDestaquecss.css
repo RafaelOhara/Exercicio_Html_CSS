@@ -86,3 +86,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+body {
+  font-family: Arial, sans-serif;
+}
