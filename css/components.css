@@ -88,8 +88,97 @@
   text-decoration: underline;
 }
 
-/* Remove o esticamento dos botões quando precisarmos deles menores */
 .botoes-alinhado-esquerda button {
   flex: none;
   padding: 10px 24px;
+}
+
+/* Sidebar (Menu Lateral) */
+.sidebar {
+  background-color: var(--cor-fundo-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.menu-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.menu-item {
+  margin-bottom: 12px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-size: 15px;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.stat-card {
+  background-color: var(--cor-fundo-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: gray;
+  margin: 0 0 12px 0;
+  font-weight: normal;
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.panel {
+  background-color: var(--cor-fundo-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.grid-header {
+  font-weight: bold;
+  border-bottom: 2px solid var(--cor-borda);
+}
+
+.btn-acao {
+  padding: 8px 16px;
+  border: 1px solid var(--cor-primaria);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--cor-primaria);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  transition: opacity 0.2s;
+}
+
+.btn-acao:hover {
+  background-color: var(--cor-primaria);
+  color: white;
 }
