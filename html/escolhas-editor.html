@@ -1,13 +1,13 @@
 <!doctype html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
-  <link rel="stylesheet" href="/Menu-lateral.css">
-  <link rel="stylesheet" href="/dashboard.css">
-  <link rel="stylesheet" href="/Header.css">
-  <link rel="stylesheet" href="/Footer.css">
-  <link rel="stylesheet" href="/fila-de-revisao.css">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
 </head>
 
 
@@ -78,74 +78,58 @@
       </section>
 
       <section class="panel category-panel">
-        <h2 class="panel-title">Fila de revisão</h2>
+        <h2 class="panel-title">Escolhas do editor</h2>
 
         <input 
           class="search-input" 
           type="text" 
           placeholder="Buscar categorias..."
         >
-<div class="grid-revisao grid-revisao-header">
-  <span>Título</span>
-  <span>Autor</span>
-  <span>Status</span>
-  <span>Ações</span>
-</div>
+        <h2 class="panel-title">Posts</h2>
+        <div class="category-list">
 
-<div class="grid-revisao">
-  <span>Comentario #1</span>
-  <span>usuario 1</span>
-  <span>Em revisão</span>
+          <div class="category-item">
+            <span class="category-name">Post #1</span>
 
-  <div class="category-actions">
-    <button class="button">Aprovar</button>
-    <button class="button">Reprovar</button>
-  </div>
-</div>
+            <div class="category-actions">
+              <button class="button button-edit">Remover</button>
+            </div>
+          </div>
 
-<div class="grid-revisao">
-  <span>Comentario #2</span>
-  <span>usuario 2</span>
-  <span>Em revisão</span>
+          <div class="category-item">
+            <span class="category-name">Post #2</span>
 
-  <div class="category-actions">
-    <button class="button">Aprovar</button>
-    <button class="button">Reprovar</button>
-  </div>
-</div>
+            <div class="category-actions">
+              <button class="button button-edit">Agendar</button>
+            </div>
+          </div>
 
-<div class="grid-revisao">
-  <span>Comentario #3</span>
-  <span>usuario 3</span>
-  <span>Em revisão</span>
+          <div class="category-item">
+            <span class="category-name">Post #3</span>
 
-  <div class="category-actions">
-    <button class="button">Aprovar</button>
-    <button class="button">Reprovar</button>
-  </div>
-</div>
+            <div class="category-actions">
+              <button class="button button-edit">Agendar</button>
+    
+            </div>
 
-<div class="grid-revisao">
-  <span>Comentario #4</span>
-  <span>usuario 4</span>
-  <span>Em revisão</span>
+          </div>
+           <div class="category-item">
+            <span class="category-name">Post #4</span>
 
-  <div class="category-actions">
-    <button class="button">Aprovar</button>
-    <button class="button">Reprovar</button>
-  </div>
-</div>
+            <div class="category-actions">
+              <button class="button button-edit">Remover</button>
+            </div>
+          </div>
 
-<div class="grid-revisao">
-  <span>Comentario #5</span>
-  <span>usuario 5</span>
-  <span>Em revisão</span>
+           <div class="category-item">
+            <span class="category-name">Post #5</span>
 
-  <div class="category-actions">
-    <button class="button">Aprovar</button>
-    <button class="button">Reprovar</button>
-  </div>
-</div>
+            <div class="category-actions">
+              <button class="button button-edit">Agendar</button>
+            </div>
+          </div>
+
+        </div>
       </section>
 
     </main>
