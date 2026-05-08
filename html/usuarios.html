@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HABIT - Usuários</title>
+    
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/forms.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="PageTop">
+        <nav class="NavPageTop" aria-label="Navegação Principal">
+          <div class="Buttons">
+            <a href="index.html"><strong>HABIT</strong></a>
+            <a href="index.html">Início</a>
+            <a href="#">Páginas</a>
+            <a href="destaques.html">Destaques</a>
+            <a href="assinar.html">Assinar</a>
+            <a href="admin.html">Admin</a>
+          </div>
+          <form action="#" class="SearchBarContainer" role="search">
+            <div class="SearchBarInner">
+              <label for="buscaGeral" class="visually-hidden">Buscar no site</label>
+              <input type="text" id="buscaGeral" placeholder="Buscar..." />
+            </div>
+            <button type="submit" class="ButtonsHeader">Buscar</button>
+            <a class="ButtonsHeader" href="login.html">Entrar</a>
+          </form>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="dashboard-layout">
+      
+      <aside class="sidebar">
+        <h2>Menu</h2>
+        <nav aria-label="Menu administrativo">
+          <ul class="menu-list">
+            <li class="menu-item"><a href="categorias.html" class="menu-link">Categorias</a></li>
+            <li class="menu-item"><a href="criar-post.html" class="menu-link">Criar Post</a></li>
+            <li class="menu-item"><a href="escolhas-editor.html" class="menu-link">Escolhas do Editor</a></li>
+            <li class="menu-item"><a href="usuarios.html" class="menu-link"><strong>Usuários</strong></a></li>
+            <li class="menu-item"><a href="fila-revisao.html" class="menu-link">Fila de revisão</a></li>
+            <li class="menu-item"><a href="fila-comentarios.html" class="menu-link">Fila de comentários</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section class="main-content">
+        
+        <div class="stats-section">
+          <article class="stat-card">
+            <h3 class="stat-title">Posts</h3>
+            <p class="stat-number">128</p>
+          </article>
+          <article class="stat-card">
+            <h3 class="stat-title">Visualizações</h3>
+            <p class="stat-number">54k</p>
+          </article>
+          <article class="stat-card">
+            <h3 class="stat-title">Inscritos</h3>
+            <p class="stat-number">12k</p>
+          </article>
+          <article class="stat-card">
+            <h3 class="stat-title">Pendências</h3>
+            <p class="stat-number">7</p>
+          </article>
+        </div>
+
+        <div class="panel">
+          <h2>Usuários</h2>
+          
+          <div class="panel-search">
+             <label for="buscaUsuario" class="visually-hidden">Buscar usuários</label>
+             <input type="text" id="buscaUsuario" class="search-panel-input" placeholder="Buscar...">
+          </div>
+
+          <div class="grid-usuarios-container">
+            <div class="grid-usuarios grid-header">
+              <span>Usuário</span>
+              <span>E-mail</span>
+              <span>Status</span>
+              <span>Ações</span>
+            </div>
+
+            <div class="grid-usuarios">
+              <span>Usuário #1</span>
+              <span>email@teste.com</span>
+              <span>Ativo</span>
+              <div><button type="button" class="btn-acao">Bloquear</button></div>
+            </div>
+            <div class="grid-usuarios">
+              <span>Usuário #2</span>
+              <span>email@teste.com</span>
+              <span>Ativo</span>
+              <div><button type="button" class="btn-acao">Bloquear</button></div>
+            </div>
+            <div class="grid-usuarios">
+              <span>Usuário #3</span>
+              <span>email@teste.com</span>
+              <span>Bloqueado</span>
+              <div><button type="button" class="btn-acao">Desbloquear</button></div>
+            </div>
+            <div class="grid-usuarios">
+              <span>Usuário #4</span>
+              <span>email@teste.com</span>
+              <span>Ativo</span>
+              <div><button type="button" class="btn-acao">Bloquear</button></div>
+            </div>
+            <div class="grid-usuarios">
+              <span>Usuário #5</span>
+              <span>email@teste.com</span>
+              <span>Ativo</span>
+              <div><button type="button" class="btn-acao">Bloquear</button></div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <nav class="NavPageBottom" aria-label="Navegação Secundária">
+          <div class="Buttons">
+            <a class="ButtonsFooter" href="#">Instagram</a>
+            <a class="ButtonsFooter" href="#">Work</a>
+            <a class="ButtonsFooter" href="#">Bags</a>
+            <a class="ButtonsFooter" href="#">Lamp</a>
+            <a class="ButtonsFooter" href="#">Books</a>
+          </div>
+        </nav>
+        <p id="Signature">© 2025 Meu Site • Meu site</p>
+      </div>
+    </footer>
+  </body>
+</html>

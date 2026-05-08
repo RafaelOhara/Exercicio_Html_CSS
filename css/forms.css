@@ -69,3 +69,19 @@
 .campo-checkbox label {
   cursor: pointer;
 }
+
+.search-panel-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.search-panel-input:focus {
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 2px rgba(4, 114, 105, 0.2);
+}
