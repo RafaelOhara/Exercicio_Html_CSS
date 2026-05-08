@@ -17,15 +17,17 @@
         <nav class="NavPageTop" aria-label="Navegação Principal">
           <div class="Buttons">
             <a href="index.html"><strong>HABIT</strong></a>
-            <a href="index.html">Início</a>
+            <a href="PrimeiraPagina.html">Início</a>
             <a href="#">Páginas</a>
-            <a href="destaques.html">Destaques</a>
+            <a href="PaginaDestaque.html">Destaques</a>
             <a href="assinar.html">Assinar</a>
             <a href="admin.html">Admin</a>
           </div>
           <form action="#" class="SearchBarContainer" role="search">
             <div class="SearchBarInner">
-              <label for="buscaGeral" class="visually-hidden">Buscar no site</label>
+              <label for="buscaGeral" class="visually-hidden"
+                >Buscar no site</label
+              >
               <input type="text" id="buscaGeral" placeholder="Buscar..." />
             </div>
             <button type="submit" class="ButtonsHeader">Buscar</button>
@@ -39,10 +41,16 @@
       <section class="LoginCard">
         <h2>Criar Conta</h2>
         <form action="#" method="POST" class="login-form">
-          
           <div class="campo-grupo">
-            <label for="nomeUsuario" class="visually-hidden">Nome completo</label>
-            <input type="text" id="nomeUsuario" placeholder="Nome completo" required />
+            <label for="nomeUsuario" class="visually-hidden"
+              >Nome completo</label
+            >
+            <input
+              type="text"
+              id="nomeUsuario"
+              placeholder="Nome completo"
+              required
+            />
           </div>
 
           <!-- E-mail -->
@@ -50,29 +58,42 @@
             <label for="emailNovo" class="visually-hidden">E-mail</label>
             <input type="email" id="emailNovo" placeholder="E-mail" required />
           </div>
-          
+
           <!--Senha -->
           <div class="campo-grupo">
             <label for="senhaNova" class="visually-hidden">Senha</label>
-            <input type="password" id="senhaNova" placeholder="Senha" required />
+            <input
+              type="password"
+              id="senhaNova"
+              placeholder="Senha"
+              required
+            />
           </div>
 
           <!--Confirmar Senha -->
           <div class="campo-grupo">
-            <label for="confirmaSenha" class="visually-hidden">Confirmar senha</label>
-            <input type="password" id="confirmaSenha" placeholder="Confirmar senha" required />
+            <label for="confirmaSenha" class="visually-hidden"
+              >Confirmar senha</label
+            >
+            <input
+              type="password"
+              id="confirmaSenha"
+              placeholder="Confirmar senha"
+              required
+            />
           </div>
 
           <!--Checkbox de Termos e Privacidade[cite: 1] -->
           <div class="campo-checkbox">
             <input type="checkbox" id="termosPrivacidade" required />
-            <label for="termosPrivacidade">Concordo com os termos e a política de privacidade</label>
+            <label for="termosPrivacidade"
+              >Concordo com os termos e a política de privacidade</label
+            >
           </div>
-          
+
           <div class="botoes-grupo botoes-alinhado-esquerda">
             <button type="submit" class="btn-primario">Cadastrar</button>
           </div>
-          
         </form>
       </section>
     </main>
@@ -81,11 +102,13 @@
       <div>
         <nav class="NavPageBottom" aria-label="Navegação Secundária">
           <div class="Buttons">
-            <a class="ButtonsFooter" href="#">Instagram</a>
-            <a class="ButtonsFooter" href="#">Work</a>
-            <a class="ButtonsFooter" href="#">Bags</a>
-            <a class="ButtonsFooter" href="#">Lamp</a>
-            <a class="ButtonsFooter" href="#">Books</a>
+            <a class="ButtonsFooter" onclick="" role="button"
+              ><b>Instagram</b></a
+            >
+            <a class="ButtonsFooter" onclick="" role="button"><b>Work</b></a>
+            <a class="ButtonsFooter" onclick="" role="button"><b>Bags</b></a>
+            <a class="ButtonsFooter" onclick="" role="button"><b>Lamp</b></a>
+            <a class="ButtonsFooter" onclick="" role="button"><b>Books</b></a>
           </div>
         </nav>
         <p id="Signature">© 2025 Meu Site • Meu site</p>

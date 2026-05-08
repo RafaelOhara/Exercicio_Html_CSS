@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assinar Newsletter</title>
-    
+
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/components.css" />
@@ -17,15 +17,17 @@
         <nav class="NavPageTop" aria-label="Navegação Principal">
           <div class="Buttons">
             <a href="index.html"><strong>HABIT</strong></a>
-            <a href="index.html">Início</a>
+            <a href="PrimeiraPagina.html">Início</a>
             <a href="#">Páginas</a>
-            <a href="destaques.html">Destaques</a>
+            <a href="PaginaDestaque.html">Destaques</a>
             <a href="assinar.html">Assinar</a>
             <a href="admin.html">Admin</a>
           </div>
           <form action="#" class="SearchBarContainer" role="search">
             <div class="SearchBarInner">
-              <label for="buscaGeral" class="visually-hidden">Buscar no site</label>
+              <label for="buscaGeral" class="visually-hidden"
+                >Buscar no site</label
+              >
               <input type="text" id="buscaGeral" placeholder="Buscar..." />
             </div>
             <button type="submit" class="ButtonsHeader">Buscar</button>
@@ -39,20 +41,27 @@
       <section class="LoginCard">
         <h2>Assinar Newsletter</h2>
         <form action="#" method="POST" class="login-form">
-          
-            <div class="campo-grupo">
-                <label for="emailUsuario" class="visually-hidden">E-mail</label>
-                <input type="email" id="emailUsuario" placeholder="E-mail" required />
-            </div>
-          
-            <div class="campo-checkbox">
-                <input type="checkbox" id="concordoNewsletter" required />
-                <label for="concordoNewsletter">Concordo em receber comunicações e li a política de privacidade.</label>
-            </div>
-          
-            <div class="botoes-grupo botoes-alinhado-esquerda">
-                <button type="submit" class="btn-primario">Assinar</button>
-            </div>       
+          <div class="campo-grupo">
+            <label for="emailUsuario" class="visually-hidden">E-mail</label>
+            <input
+              type="email"
+              id="emailUsuario"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+
+          <div class="campo-checkbox">
+            <input type="checkbox" id="concordoNewsletter" required />
+            <label for="concordoNewsletter"
+              >Concordo em receber comunicações e li a política de
+              privacidade.</label
+            >
+          </div>
+
+          <div class="botoes-grupo botoes-alinhado-esquerda">
+            <button type="submit" class="btn-primario">Assinar</button>
+          </div>
         </form>
       </section>
     </main>
@@ -61,11 +70,13 @@
       <div>
         <nav class="NavPageBottom" aria-label="Navegação Secundária">
           <div class="Buttons">
-            <a class="ButtonsFooter" href="#">Instagram</a>
-            <a class="ButtonsFooter" href="#">Work</a>
-            <a class="ButtonsFooter" href="#">Bags</a>
-            <a class="ButtonsFooter" href="#">Lamp</a>
-            <a class="ButtonsFooter" href="#">Books</a>
+            <a class="ButtonsFooter" onclick="" role="button"
+              ><b>Instagram</b></a
+            >
+            <a class="ButtonsFooter" onclick="" role="button"><b>Work</b></a>
+            <a class="ButtonsFooter" onclick="" role="button"><b>Bags</b></a>
+            <a class="ButtonsFooter" onclick="" role="button"><b>Lamp</b></a>
+            <a class="ButtonsFooter" onclick="" role="button"><b>Books</b></a>
           </div>
         </nav>
         <p id="Signature">© 2025 Meu Site • Meu site</p>
